@@ -15,7 +15,7 @@
 sudo apt-get update
 
 #Установка интерпретатора и менеджера пакетов pip языка Python
-sudo apt-get install -y python3-dev=3.6.7-118.04 python3-pip=9.0.1-2.3*ubuntu*1.18.04.1 graphviz=2.40.1-2
+sudo apt-get install -y python3-dev=3.6.7-1~18.04 python3-pip=9.0.1-2.3~ubuntu1.18.04.1 graphviz=2.40.1-2
 
 pip3 install --user 'tensorflow==2.0.0b1' 'matplotlib==3.1.2' 'keras== 2.3.1' 'numpy==1.16.4' 'pydot==1.4.1' 'testresources'
 
@@ -36,23 +36,23 @@ pip3 install --user 'tensorflow==2.0.0b1' 'matplotlib==3.1.2' 'keras== 2.3.1' 'n
 •	pydot – интерфейс для работы Graphviz (визуализация графов, версия 1.4.1).
 
 ### UBUNTU 18.04
-1)обновление системы
+1) Обновление системы
 sudo apt-get update
 
-2)Установка интерпретатора и менеджера пакетов pip языка Python
-sudo apt-get install -y python3-dev=3.6.7-1~18.04 python3-pip=9.0.1-2.3~ubuntu1.18.04.1 graphviz=2.40.1-2
+2) Установка интерпретатора и менеджера пакетов pip языка Python
+sudo apt-get install -y python3-dev=3.6.7-1\~18.04 python3-pip=9.0.1-2.3\~ubuntu1.18.04.1 graphviz=2.40.1-2
 
-3)Установка необходимых пакетов(!!!ВНУТРИ ВИРТУАЛЬНОЙ СРЕДЫ!!!)
+3) Установка необходимых пакетов(!!!ВНУТРИ ВИРТУАЛЬНОЙ СРЕДЫ!!!)
 pip3 install 'tensorflow==2.0.0b1' 'matplotlib==3.1.2' 'keras== 2.3.1' 'numpy==1.16.4' 'pydot==1.4.1' 'testresources' 'matplotlib==3.2.1' 'cython==0.29.16' 'contextlib2==0.6.0' 'jupyter==1.0.0' 'numpy==1.16.4' 'pandas==1.0.3'
 
-3)graphana
+4) Graphana
 sudo apt-get install -y apt-transport-https
 sudo apt-get install -y software-properties-common wget
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install grafana
 
-4)influx
+5) influx
 wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 source /etc/lsb-release
 echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
