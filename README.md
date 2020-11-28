@@ -15,7 +15,7 @@
 sudo apt-get update
 
 #Установка интерпретатора и менеджера пакетов pip языка Python
-sudo apt-get install -y python3-dev=3.6.7-1~18.04 python3-pip=9.0.1-2.3~ubuntu1.18.04.1 graphviz=2.40.1-2
+sudo apt-get install -y python3-dev=3.6.7-118.04 python3-pip=9.0.1-2.3*ubuntu*1.18.04.1 graphviz=2.40.1-2
 
 pip3 install --user 'tensorflow==2.0.0b1' 'matplotlib==3.1.2' 'keras== 2.3.1' 'numpy==1.16.4' 'pydot==1.4.1' 'testresources'
 
